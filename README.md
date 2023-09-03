@@ -5,7 +5,7 @@ EvORanker is a software that implements phylogenetic profiling and STRING-based 
 EvORanker is the first platform that leverages a clade-wise phylogenetic profiling (PP) approach to associate gene variants in patients with their phenotypes. It is particularly useful for identifying disease associations for genes that may not have been previously characterized or published.
 
 ## Releases
-EvORanker is also available as a web-sever at [here](https://ccanavati.shinyapps.io/EvORanker/).
+EvORanker is also available as a web server at [here](https://ccanavati.shinyapps.io/EvORanker/).
 
 ## Dependencies
 
@@ -23,10 +23,13 @@ cd EvoRanker
 ```
 ## Synopsis
 
-- Prioritize genes based on PP and STRING (The smaller the p-value, the stronger the evidence against the null hypothesis, indicating a more significant association for the gene): 
+- Indirectly prioritize genes based on PP and STRING (The smaller the p-value, the stronger the evidence against the null hypothesis, indicating a more significant association for the gene): 
 ```
-Rscript gene_prioritization.R example_genes.txt HP:0001188 HP:0001166 HP:0001199 output_file.csv
+Rscript PP_STRING_gene_prioritization.R example_genes.txt HP:0001250 HP:0002392 output_file.csv
 ```
-
+- Directly prioritize genes based on association with phenotype (without PP and STRING) using OntologySimilarity
+```
+Rscript Direct_gene_prioritization.R example_genes.txt HP:0001250 HP:0002392 output_file.csv
+```
 ## Contact
 - Christina Canavati (canavatichristina@gmail.com)
