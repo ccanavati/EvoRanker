@@ -14,8 +14,8 @@ EvORanker is also available as a web server at [here](https://ccanavati.shinyapp
 ## Installation
 
 Please clone the repository into your computer:
-```
-git clone https://github.com/WGLab/phenolyzer](https://github.com/ccanavati/EvoRanker
+``` 
+git clone https://github.com/ccanavati/EvoRanker
 ```
 Then enter the EvoRanker directory:
 ```
