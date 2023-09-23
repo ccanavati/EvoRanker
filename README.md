@@ -27,9 +27,10 @@ cd EvoRanker
 ```
 Rscript PP_STRING_gene_prioritization.R example_genes.txt HP:0001250 HP:0002392 output_file.csv
 ```
-- Directly prioritize genes based on association with phenotype (without PP and STRING) using OntologySimilarity
+- Directly prioritize genes based on association with the phenotype(s) (without PP and STRING) using OntologySimilarity tool*
 ```
 Rscript Direct_gene_prioritization.R example_genes.txt HP:0001250 HP:0002392 output_file.csv
 ```
+*Greene D, Richardson S, Turro E. ontologyX: a suite of R packages for working with ontological data. Bioinformatics. 2017 Apr 1;33(7):1104–6.
 ## Contact
 - Christina Canavati (canavatichristina@gmail.com)
