@@ -15,10 +15,10 @@ if (length(args) < 3) {
   quit(status = 1)
 }
 
-df_hpo <- read_tsv("hpo2022.txt", show_col_types = FALSE)
+df_hpo <- read_tsv("hpo2023.txt", show_col_types = FALSE)
 
 # Read ontology file 
-hpo <-  get_ontology("hpo2022.obo")
+hpo <-  get_ontology("hpo2023.obo")
 
 #Create HPO gene list
 hpo_genes <- split(df_hpo$`HPO-Term-ID`, df_hpo$Gene_symbol)
