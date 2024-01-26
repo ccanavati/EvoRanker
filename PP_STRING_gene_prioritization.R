@@ -97,11 +97,11 @@ suppressWarnings({
       if(nrow(clade) == 0){
         next
       }
-
+        try({
       test <- ks.test(clade$Score, df.hpo_all$Score, alternative = "less")
       p_value = test$p.value
       tmp <- data.frame(Gene = gene, Clade = i, p_value = p_value)
-      
+}, silent=TRUE)      
       savethis <- rbind(savethis, tmp)
     }
     
