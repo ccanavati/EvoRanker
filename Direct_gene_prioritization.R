@@ -2,9 +2,9 @@
 #Load libraries
 
 if (!require("data.table")) install.packages("data.table", dependencies = T)
-if (!require("tidyverse")) install.packages("data.table", dependencies = T)
-if (!require("ontologyIndex")) install.packages("data.table", dependencies = T)
-if (!require("ontologySimilarity")) install.packages("data.table", dependencies = T)
+if (!require("tidyverse")) install.packages("tidyverse", dependencies = T)
+if (!require("ontologyIndex")) install.packages("ontologyIndex", dependencies = T)
+if (!require("ontologySimilarity")) install.packages("ontologySimilarity", dependencies = T)
 
 
 args <- commandArgs(trailingOnly = TRUE)
