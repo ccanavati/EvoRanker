@@ -10,7 +10,10 @@ if (!require("data.table")) install.packages("data.table", dependencies = T)
 if (!require("tidyverse")) install.packages("tidyverse", dependencies = T)
 if (!require("ontologyIndex")) install.packages("ontologyIndex", dependencies = T)
 if (!require("ontologySimilarity")) install.packages("ontologySimilarity", dependencies = T)
-if (!require("survcomp")) install.packages("survcomp", dependencies = T)
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install("survcomp")
 if (!require("readr")) install.packages("readr", dependencies = T)
 
 args <- commandArgs(trailingOnly = TRUE)
